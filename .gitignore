@@ -1,0 +1,7 @@
+replica/target/*
+iwp_app/.idea/*
+*.class
+*.lst
+*.DS_Store
+target/*
+*.json

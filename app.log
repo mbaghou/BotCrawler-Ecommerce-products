@@ -1,0 +1,240 @@
+2019-05-12 16:37:53.982  INFO 39951 --- [main] i.c.iwpcrawler.IwpCrawlerApplication     : Starting IwpCrawlerApplication v0.0.1-SNAPSHOT on MacBook-Pro-de-MacBook-9.local with PID 39951 (/Users/macbookpro/project/iwp/iwp-crawler/target/iwp-crawler-0.0.1-SNAPSHOT.jar started by macbookpro in /Users/macbookpro/project/iwp/iwp-crawler)
+2019-05-12 16:37:54.006  INFO 39951 --- [main] i.c.iwpcrawler.IwpCrawlerApplication     : The following profiles are active: server
+2019-05-12 16:37:58.226  INFO 39951 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-12 16:37:58.408  INFO 39951 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 170ms. Found 4 repository interfaces.
+2019-05-12 16:38:00.198  INFO 39951 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-05-12 16:38:00.316  INFO 39951 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-12 16:38:00.319  INFO 39951 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-12 16:38:00.419  INFO 39951 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/macbookpro/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-05-12 16:38:00.862  INFO 39951 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-12 16:38:00.865  INFO 39951 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6414 ms
+2019-05-12 16:38:02.422  INFO 39951 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-05-12 16:38:02.715  INFO 39951 --- [cluster-ClusterId{value='5cd82fca4a93549c0f2ded60', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:11}] to localhost:27017
+2019-05-12 16:38:02.721  INFO 39951 --- [cluster-ClusterId{value='5cd82fca4a93549c0f2ded60', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 4]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=1914484}
+2019-05-12 16:38:06.711  INFO 39951 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-12 16:38:06.830  INFO 39951 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2019-05-12 16:38:06.839  INFO 39951 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'scrapExecutor'
+2019-05-12 16:38:08.487  INFO 39951 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-12 16:38:08.600  INFO 39951 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-12 16:38:08.722  INFO 39951 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-12 16:38:09.575  INFO 39951 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2019-05-12 16:38:09.581  INFO 39951 --- [main] i.c.iwpcrawler.IwpCrawlerApplication     : Started IwpCrawlerApplication in 17.501 seconds (JVM running for 20.322)
+2019-05-12 16:38:09.641  INFO 39951 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:12}] to localhost:27017
+2019-05-12 16:38:09.820  INFO 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar10
+2019-05-12 16:38:09.821  INFO 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar19
+2019-05-12 16:38:09.821  INFO 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar4
+2019-05-12 16:38:09.820  INFO 39951 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar27
+2019-05-12 16:38:11.579 ERROR 39951 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar27
+2019-05-12 16:38:11.581 ERROR 39951 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:11.581 ERROR 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar19
+2019-05-12 16:38:11.582 ERROR 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:11.582  INFO 39951 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar28
+2019-05-12 16:38:11.582  INFO 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar20
+2019-05-12 16:38:11.585 ERROR 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar4
+2019-05-12 16:38:11.586 ERROR 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:11.586  INFO 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar5
+2019-05-12 16:38:11.679  INFO 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar11
+2019-05-12 16:38:12.013 ERROR 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar20
+2019-05-12 16:38:12.014 ERROR 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:12.014  INFO 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar21
+2019-05-12 16:38:12.013 ERROR 39951 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar28
+2019-05-12 16:38:12.016 ERROR 39951 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:12.016  INFO 39951 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar29
+2019-05-12 16:38:12.024 ERROR 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar5
+2019-05-12 16:38:12.024 ERROR 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:12.024  INFO 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar6
+2019-05-12 16:38:12.100 ERROR 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar11
+2019-05-12 16:38:12.100 ERROR 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:12.101  INFO 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar8
+2019-05-12 16:38:12.417 ERROR 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar21
+2019-05-12 16:38:12.419 ERROR 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:12.420  INFO 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar22
+2019-05-12 16:38:12.425 ERROR 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar6
+2019-05-12 16:38:12.426 ERROR 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:12.426  INFO 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar7
+2019-05-12 16:38:12.499 ERROR 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar8
+2019-05-12 16:38:12.499 ERROR 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:12.499  INFO 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar9
+2019-05-12 16:38:12.783  INFO 39951 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar30
+2019-05-12 16:38:12.869 ERROR 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar22
+2019-05-12 16:38:12.869 ERROR 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:12.869  INFO 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar17
+2019-05-12 16:38:12.879 ERROR 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar7
+2019-05-12 16:38:12.879 ERROR 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:12.879  INFO 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar2
+2019-05-12 16:38:12.887 ERROR 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar9
+2019-05-12 16:38:12.887 ERROR 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:12.888  INFO 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar14
+2019-05-12 16:38:13.327 ERROR 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar2
+2019-05-12 16:38:13.327 ERROR 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar14
+2019-05-12 16:38:13.329 ERROR 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:13.329 ERROR 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:13.330  INFO 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar3
+2019-05-12 16:38:13.330  INFO 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar15
+2019-05-12 16:38:13.342  INFO 39951 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar25
+2019-05-12 16:38:13.342 ERROR 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar17
+2019-05-12 16:38:13.343 ERROR 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:13.343  INFO 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar18
+2019-05-12 16:38:13.711 ERROR 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar3
+2019-05-12 16:38:13.711 ERROR 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar15
+2019-05-12 16:38:13.711 ERROR 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:13.711 ERROR 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:13.711  INFO 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar1
+2019-05-12 16:38:13.711  INFO 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar12
+2019-05-12 16:38:13.712 ERROR 39951 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar25
+2019-05-12 16:38:13.712 ERROR 39951 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:13.712  INFO 39951 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar26
+2019-05-12 16:38:13.732 ERROR 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar18
+2019-05-12 16:38:13.733 ERROR 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:13.733  INFO 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar16
+2019-05-12 16:38:14.122 ERROR 39951 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar26
+2019-05-12 16:38:14.122 ERROR 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar1
+2019-05-12 16:38:14.122 ERROR 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar12
+2019-05-12 16:38:14.122 ERROR 39951 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:14.122 ERROR 39951 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:14.122 ERROR 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:14.123  INFO 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar13
+2019-05-12 16:38:14.122  INFO 39951 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar23
+2019-05-12 16:38:14.150 ERROR 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar16
+2019-05-12 16:38:14.150 ERROR 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:14.520 ERROR 39951 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar23
+2019-05-12 16:38:14.521 ERROR 39951 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:14.521  INFO 39951 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar24
+2019-05-12 16:38:14.529 ERROR 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar13
+2019-05-12 16:38:14.529 ERROR 39951 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:14.931 ERROR 39951 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar24
+2019-05-12 16:38:14.932 ERROR 39951 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:38:14.933  INFO 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : Actives slaves = [mawiwpmar10, mawiwpmar29, mawiwpmar30]
+2019-05-12 16:38:15.314 ERROR 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : findrandomdep return null - escape slave mawiwpmar10
+2019-05-12 16:38:15.316 ERROR 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : findrandomdep return null - escape slave mawiwpmar29
+2019-05-12 16:38:15.318 ERROR 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : findrandomdep return null - escape slave mawiwpmar30
+2019-05-12 16:38:15.319  INFO 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : start scraping below slaves : 
+2019-05-12 16:38:15.339  INFO 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : sleep 60s time before scrap ...
+2019-05-12 16:39:20.342 ERROR 39951 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : slaves list null
+2019-05-12 16:39:20.361  INFO 39951 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'scrapExecutor'
+2019-05-12 16:39:20.378  INFO 39951 --- [Thread-3] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:12}] to localhost:27017 because the pool has been closed.
+2019-05-12 16:57:01.829  INFO 42019 --- [main] i.c.iwpcrawler.IwpCrawlerApplication     : Starting IwpCrawlerApplication v0.0.1-SNAPSHOT on MacBook-Pro-de-MacBook-9.local with PID 42019 (/Users/macbookpro/project/iwp/iwp-crawler/target/iwp-crawler-0.0.1-SNAPSHOT.jar started by macbookpro in /Users/macbookpro/project/iwp/iwp-crawler)
+2019-05-12 16:57:01.848  INFO 42019 --- [main] i.c.iwpcrawler.IwpCrawlerApplication     : The following profiles are active: server
+2019-05-12 16:57:03.946  INFO 42019 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-12 16:57:04.095  INFO 42019 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138ms. Found 4 repository interfaces.
+2019-05-12 16:57:05.374  INFO 42019 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2019-05-12 16:57:05.448  INFO 42019 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-12 16:57:05.450  INFO 42019 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-05-12 16:57:05.487  INFO 42019 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/macbookpro/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2019-05-12 16:57:05.696  INFO 42019 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-12 16:57:05.697  INFO 42019 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3729 ms
+2019-05-12 16:57:06.396  INFO 42019 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-05-12 16:57:06.544  INFO 42019 --- [cluster-ClusterId{value='5cd834424a9354a4239fd857', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:13}] to localhost:27017
+2019-05-12 16:57:06.549  INFO 42019 --- [cluster-ClusterId{value='5cd834424a9354a4239fd857', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 4, 4]}, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=1947181}
+2019-05-12 16:57:08.171  INFO 42019 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-12 16:57:08.200  INFO 42019 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService
+2019-05-12 16:57:08.203  INFO 42019 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'scrapExecutor'
+2019-05-12 16:57:09.043  INFO 42019 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-05-12 16:57:09.143  INFO 42019 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-05-12 16:57:09.215  INFO 42019 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-05-12 16:57:09.709  INFO 42019 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2019-05-12 16:57:09.713  INFO 42019 --- [main] i.c.iwpcrawler.IwpCrawlerApplication     : Started IwpCrawlerApplication in 8.894 seconds (JVM running for 9.78)
+2019-05-12 16:57:09.766  INFO 42019 --- [main] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:14}] to localhost:27017
+2019-05-12 16:57:09.887  INFO 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar4
+2019-05-12 16:57:09.887  INFO 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar10
+2019-05-12 16:57:09.891  INFO 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar14
+2019-05-12 16:57:09.891  INFO 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar19
+2019-05-12 16:57:10.806 ERROR 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar19
+2019-05-12 16:57:10.806 ERROR 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:10.807  INFO 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar20
+2019-05-12 16:57:10.806 ERROR 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar10
+2019-05-12 16:57:10.807 ERROR 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:10.807  INFO 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar11
+2019-05-12 16:57:10.806 ERROR 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar14
+2019-05-12 16:57:10.809 ERROR 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:10.809  INFO 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar15
+2019-05-12 16:57:10.809 ERROR 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar4
+2019-05-12 16:57:10.811 ERROR 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:10.811  INFO 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar5
+2019-05-12 16:57:11.184 ERROR 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar20
+2019-05-12 16:57:11.184 ERROR 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar15
+2019-05-12 16:57:11.185 ERROR 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:11.185 ERROR 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:11.185  INFO 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar12
+2019-05-12 16:57:11.185  INFO 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar21
+2019-05-12 16:57:11.185 ERROR 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar5
+2019-05-12 16:57:11.187 ERROR 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:11.187  INFO 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar6
+2019-05-12 16:57:11.191 ERROR 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar11
+2019-05-12 16:57:11.192 ERROR 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:11.192  INFO 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar8
+2019-05-12 16:57:11.607 ERROR 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar12
+2019-05-12 16:57:11.607 ERROR 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar21
+2019-05-12 16:57:11.607 ERROR 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:11.607 ERROR 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:11.608  INFO 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar13
+2019-05-12 16:57:11.608 ERROR 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar8
+2019-05-12 16:57:11.608 ERROR 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:11.609  INFO 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar9
+2019-05-12 16:57:11.608  INFO 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar22
+2019-05-12 16:57:11.616 ERROR 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar6
+2019-05-12 16:57:11.616 ERROR 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:11.617  INFO 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar7
+2019-05-12 16:57:11.981 ERROR 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar13
+2019-05-12 16:57:11.981 ERROR 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar9
+2019-05-12 16:57:11.981 ERROR 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar22
+2019-05-12 16:57:11.981 ERROR 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:11.982  INFO 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar2
+2019-05-12 16:57:11.981 ERROR 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:11.982  INFO 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar1
+2019-05-12 16:57:11.981 ERROR 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:11.983  INFO 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar17
+2019-05-12 16:57:11.995 ERROR 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar7
+2019-05-12 16:57:11.995 ERROR 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:11.995  INFO 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar27
+2019-05-12 16:57:12.364 ERROR 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar27
+2019-05-12 16:57:12.364 ERROR 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar2
+2019-05-12 16:57:12.364 ERROR 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:12.365  INFO 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar28
+2019-05-12 16:57:12.364 ERROR 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar17
+2019-05-12 16:57:12.367 ERROR 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:12.367  INFO 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar18
+2019-05-12 16:57:12.364 ERROR 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:12.368  INFO 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar3
+2019-05-12 16:57:12.371 ERROR 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar1
+2019-05-12 16:57:12.372 ERROR 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:12.372  INFO 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar16
+2019-05-12 16:57:12.811 ERROR 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar16
+2019-05-12 16:57:12.811 ERROR 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar28
+2019-05-12 16:57:12.812 ERROR 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:12.812  INFO 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar25
+2019-05-12 16:57:12.812 ERROR 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:12.813  INFO 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar29
+2019-05-12 16:57:12.825 ERROR 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar3
+2019-05-12 16:57:12.825 ERROR 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:12.825  INFO 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar23
+2019-05-12 16:57:12.825 ERROR 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar18
+2019-05-12 16:57:12.826 ERROR 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:13.181 ERROR 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar25
+2019-05-12 16:57:13.181 ERROR 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:13.181  INFO 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar26
+2019-05-12 16:57:13.184 ERROR 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar29
+2019-05-12 16:57:13.184 ERROR 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:13.184  INFO 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar30
+2019-05-12 16:57:13.542 ERROR 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar26
+2019-05-12 16:57:13.543 ERROR 42019 --- [ForkJoinPool.commonPool-worker-1] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:13.553 ERROR 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar30
+2019-05-12 16:57:13.553 ERROR 42019 --- [ForkJoinPool.commonPool-worker-2] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:20.552  INFO 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : wakeup mawiwpmar24
+2019-05-12 16:57:20.949 ERROR 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      :  ----> escape slave mawiwpmar24
+2019-05-12 16:57:20.950 ERROR 42019 --- [ForkJoinPool.commonPool-worker-3] i.c.iwpcrawler.engine.MonitorEngine      : 503 Service Unavailable
+2019-05-12 16:57:20.951  INFO 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : Actives slaves = [mawiwpmar23]
+2019-05-12 16:57:20.963 ERROR 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : findrandomdep return null - escape slave mawiwpmar23
+2019-05-12 16:57:20.963  INFO 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : start scraping below slaves : 
+2019-05-12 16:57:20.964  INFO 42019 --- [main] i.c.iwpcrawler.engine.MonitorEngine      : sleep 60s time before scrap ...
+2019-05-12 16:57:57.260  INFO 42019 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'scrapExecutor'
+2019-05-12 16:57:57.267  INFO 42019 --- [Thread-3] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:2, serverValue:14}] to localhost:27017 because the pool has been closed.
+2019-05-12 16:58:05.203  INFO 42045 --- [main] i.c.iwpcrawler.IwpCrawlerApplication     : Starting IwpCrawlerApplication v0.0.1-SNAPSHOT on MacBook-Pro-de-MacBook-9.local with PID 42045 (/Users/macbookpro/project/iwp/iwp-crawler/target/iwp-crawler-0.0.1-SNAPSHOT.jar started by macbookpro in /Users/macbookpro/project/iwp/iwp-crawler)
+2019-05-12 16:58:05.220  INFO 42045 --- [main] i.c.iwpcrawler.IwpCrawlerApplication     : The following profiles are active: server
+2019-05-12 16:58:09.232  INFO 42047 --- [main] i.c.iwpcrawler.IwpCrawlerApplication     : Starting IwpCrawlerApplication v0.0.1-SNAPSHOT on MacBook-Pro-de-MacBook-9.local with PID 42047 (/Users/macbookpro/project/iwp/iwp-crawler/target/iwp-crawler-0.0.1-SNAPSHOT.jar started by macbookpro in /Users/macbookpro/project/iwp/iwp-crawler)
+2019-05-12 16:58:09.241  INFO 42047 --- [main] i.c.iwpcrawler.IwpCrawlerApplication     : The following profiles are active: server
+2019-05-12 16:58:12.007  INFO 42049 --- [main] i.c.iwpcrawler.IwpCrawlerApplication     : Starting IwpCrawlerApplication v0.0.1-SNAPSHOT on MacBook-Pro-de-MacBook-9.local with PID 42049 (/Users/macbookpro/project/iwp/iwp-crawler/target/iwp-crawler-0.0.1-SNAPSHOT.jar started by macbookpro in /Users/macbookpro/project/iwp/iwp-crawler)
+2019-05-12 16:58:12.022  INFO 42049 --- [main] i.c.iwpcrawler.IwpCrawlerApplication     : The following profiles are active: server
+2019-05-12 16:58:14.507  INFO 42049 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-12 16:58:14.653  INFO 42049 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 135ms. Found 4 repository interfaces.
+2019-05-12 16:58:16.115  INFO 42049 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
